@@ -1,0 +1,55 @@
+.project_card{
+    max-width: 20%;
+}
+
+.projects_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.arrowButton{
+    background-color: transparent;
+    width: 2%;
+    border: none;
+    cursor: pointer;
+}
+
+.leftArrow{
+    position: absolute;
+    left: 4%;
+    margin-top: 18rem;
+}
+
+.rigthArrow{
+    position: absolute;
+    right: 4%;
+    margin-top: 18rem;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    //position: absolute;
+
+    &:active{
+        border: solid red;
+        border-width: 0 3px 3px 0;
+        width: 30px;
+        height: 30px;
+    }
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }

@@ -1,0 +1,43 @@
+.header {
+	//	background-color: green;
+		height: 10vh;
+        display: fixed;
+
+	}
+
+.idioma{
+        // background-color: red;
+        position:absolute;
+      //  display: in;
+        right: 8%;
+        top:4%;
+        align-items: flex-end;
+    }
+
+.menu{
+        position:fixed;
+       /*  width: 0%;
+        height: 100%; */
+        right: 1%;
+        top:4%;
+        align-items: flex-end;
+    }
+
+.menubutton{
+        float: right;
+    }
+
+
+.showMenu{
+        display: block;
+        margin-top:16%;
+        border: 1px black solid;
+    }
+    
+.hideMenu{
+        display: none;
+    }
+    
+.logo_info{
+    display: fixed;
+}
