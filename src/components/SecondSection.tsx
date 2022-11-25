@@ -72,7 +72,9 @@ export const SecondSection = () => {
             return(
               <ProjectCard title={projectsData[index].title} descripcion={projectsData[index].descripcion} 
                            imgSrc={projectsData[index].imgSrc}
-                           tools={projectsData[index].tools}/>
+                           tools={projectsData[index].tools}
+                           key={projectsData[index].title}
+                           />
             )
           })}
 

@@ -1,5 +1,5 @@
 .project_card{
-    max-width: 20%;
+    max-width: 30%;
 }
 
 .projects_container{
@@ -24,6 +24,18 @@
     position: absolute;
     right: 4%;
     margin-top: 18rem;
+}
+
+.upArrow{
+    position: absolute;
+    right: 51.2%;
+}
+
+.downArrow{
+    position: absolute;
+    right: 51.2%;
+    margin-top: 43%;
+
 }
 
 .arrow {
@@ -52,4 +64,14 @@
 .left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }

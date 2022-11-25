@@ -1,0 +1,77 @@
+.timeline_container{
+   // background-color: red;
+    max-height: 80%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dates_container{
+    display: fixed;
+}
+
+.item_1{
+    margin-left: 15%;
+    margin-top: 3%;
+    border: 1px black solid;
+    max-width: 30%;
+    text-align: center;
+
+    &:hover{
+        border: 1px red solid;
+    }
+}
+
+.item_2{
+    margin-left: 51%;
+    margin-top: 8%;
+    border: 1px black solid;
+    max-width: 30%;
+    text-align: center;
+
+    &:hover{
+        border: 1px red solid;
+    }
+}
+
+
+
+.progress_container {
+    position: absolute;
+    height: 37rem;
+    width: 0.1rem;
+    border-radius: 0.4rem;
+    margin-left: 48%;
+    background: #000;
+  }
+  
+/*   .progress_container .progress {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.4rem;
+  
+    background: #ff4754;
+  
+    transition: width 0.4s ease;
+  } */
+
+  .dot{
+    background-color: #000;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -7px;
+  }
+
+  .firstDot{
+    margin-top: 4rem;
+  }
+
+  .secondDot{
+    margin-top: 21rem;
+  }
+  .thirdDot{
+    margin-top: 33rem
+  }

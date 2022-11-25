@@ -70,7 +70,7 @@ export const Header = (headerProps:HeaderProps) => {
         
           <div className='menu'>
           <button className='menubutton' onClick={headerProps.handleMenu} > {headerProps.showMenu?  <GrClose/> :  <GiHamburgerMenu/> } </button>
-            <nav className={showMenu ? 'showMenu' : 'hideMenu'} >
+            <nav className={headerProps.showMenu ? 'showMenu' : 'hideMenu'} >
               <ul>
                 <li> <a href='#index' > Inicio </a>  </li>
                 <li> <a href='#projects'> Proyectos </a>  </li>
