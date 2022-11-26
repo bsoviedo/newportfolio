@@ -1,8 +1,9 @@
-import React ,{useRef, useState} from 'react'
+import React ,{useEffect, useRef, useState} from 'react'
 import { useMenu } from '../hooks/useMenu';
 import { Header } from './Header';
 import { ProjectCard } from './sharedComponents/ProjectCard';
 import { projectsData } from '../helpers/ProjectsData';
+import { useKeyPress } from '../hooks/useKeyPressed';
 
 export const SecondSection = () => {
   let {handleMenu, showMenu} = useMenu();
@@ -59,6 +60,31 @@ export const SecondSection = () => {
   
 
   }
+
+  
+  //ArrowRight
+  //ArrowLeft
+
+  
+  const downPress = useKeyPress("ArrowRight");
+  const upPress = useKeyPress("ArrowLeft");
+
+
+  useEffect(() => {
+
+    if(downPress){
+      moveProjects('next')
+    }
+  }, [downPress]);
+
+  useEffect(() => {
+
+    if (upPress) {
+      moveProjects('back')
+    }
+
+  }, [upPress]);
+
 
 
   return (

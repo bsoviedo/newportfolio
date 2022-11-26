@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import { useMenu } from '../hooks/useMenu';
 import { Header } from './Header'
 import { TimeLine } from './sharedComponents/TimeLine';
 import {useLocation} from 'react-router-dom'
+import { useKeyPress } from '../hooks/useKeyPressed';
 
 export const ThirdSection = () => {
 
@@ -12,12 +13,28 @@ export const ThirdSection = () => {
 
   let location= useLocation()
 
+  const downPress = useKeyPress("ArrowDown");
+  const upPress = useKeyPress("ArrowUp");
+
+
   useEffect(() => {
 
-    settrajectorySection(0)
-    
+    if(downPress){
+      nextStep()
+    }
+  }, [downPress]);
+
+  useEffect(() => {
+
+    if (upPress) {
+      prevStep()
+    }
+
+  }, [upPress]);
+
   
-    
+  useEffect(() => {
+    settrajectorySection(0)
   }, [location])
   
 
